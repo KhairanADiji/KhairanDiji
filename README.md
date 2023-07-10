@@ -1,1 +1,2 @@
-# KhairanDiji
+# Welcome to my personal portfolio!
+
