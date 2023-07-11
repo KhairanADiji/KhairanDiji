@@ -7,6 +7,10 @@
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
+body{
+    background-color: #fffffe;
+}
+
 /* Nav Bar */
 .nav-banner{
     display: flex;
@@ -20,15 +24,17 @@
 
 .nav-logo{
     margin: 0 20px;
+    font-weight: bold;
 }
 
-i{
-    color: #FE9A00;
+.fa-code{
+    color: #FFD803;
 }
 
 .navigation a{
-    color: black;
+    color: #272343;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-items{
@@ -51,20 +57,26 @@ i{
 
 .nav-block{
     display: inline;
-    /* background-color: #FE9A00; */
+    background-color:#FFD803;
     padding: 10px;
     border-radius: 10px;
 }
 
 /* Intro */
-.intro{
-    margin: 50px;
-    padding: 50px 70px;
+#intro{
+    margin: 100px 30px 0;
+    padding: 50px 70px 10px;
+    color: #272343;
+    min-height: 80vh;
+    /* display: flex;
+    justify-content: space-between; */
+
 }
 
 .wrapper{
     display: flex;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
 .wrapper .static-text{
@@ -81,7 +93,6 @@ i{
 
 .dynamic-text li{
     list-style: none;
-    /* background-color: pink; */
     top: 0;
     position: relative;
     animation: slide 9s steps(3) infinite;
@@ -102,8 +113,8 @@ i{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: white;
-    border-left: 2px solid black;
+    background-color: #fffffe;
+    border-left: 2px solid #2d334a;
     animation: typing 3s steps(9) infinite;
 }
 
@@ -115,4 +126,96 @@ i{
     100% {
         left: 0;
     }
+}
+
+.intro-p {
+    margin-top: 20px;
+    color: #2d334a;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* .intro-img{
+    width: 60%;
+    
+} */
+
+/* Intro Button */
+.btn-con{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-con a{
+    text-decoration: none;
+}
+
+.main-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #FFD803;
+    position: relative;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.btn-text h2{
+    padding: 0 2rem;
+    color: #272343;
+}
+
+.btn-icon{
+    color: #272343;
+    background-color: #FFD803;
+    padding: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.main-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all .4s ease-in-out;
+    z-index: -1;
+  }
+  
+  .main-btn:hover:before {
+    width: 100%;
+    height: 100%;
+    background-color: #FFD803;
+    transform: translateX(0);
+  }
+
+/* Toolbox */
+#toolbox{
+    background-color: #e3f6f5;
+    padding: 20px 70px 20px 90px;
+      
+}
+/* 
+.tb-intro{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+} */
+
+.tb-heading{
+    color: #272343;
+    font-size: 3rem;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.tb-words{
+    color: #2d334a;
+    font-size: 1.5rem;
+    margin-top: 15px;
 }
