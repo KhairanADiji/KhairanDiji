@@ -28,9 +28,9 @@
                  <div class="nav-wrap">
                      <nav class="nav-items">
                         <a href="#" class="nav-link">About</a>
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                         <div class="nav-block">
-                          <a href="">View Work</a>
+                          <a href="#portfolio">View Work</a>
                       </div>
                      </nav>
                  </div>
@@ -108,8 +108,8 @@
         <!-- PORTFOLIO -->
         <section id="portfolio">
           <div class="tb-intro">
-            <h2 class="tb-heading">Portfolio</h2>
-            <p class="tb-words">Here are some projects I have worked on.</p>
+            <h2 class="tb-heading">Work</h2>
+            <p class="tb-words">Here are some stuff I have built.</p>
           </div>
 
           <div class="port-projects">
@@ -120,14 +120,16 @@
               
               <div class="project-desc">
                 <h3>Mealy</h3>
-                <p>An app for ordering food and drinks. The app is designed to make it easy and convenient for users to order their favorite meals and drinks from local restaurants and cafes. A team project built in collaboration with 7 other developers.</p>
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-react"></i>
-                <i class="fa-brands fa-square-js"></i>
-                <div class="p-btn">
-                <button><a href="">See Website</a></button>
-                <button><a href="">View source code</a></button>
+                <p>An app that helps users order their favorite meals and drinks from local restaurants and cafes. A team project built in collaboration with 7 other developers.</p>
+                <div class="p-icons">
+                <i class="p-i fa-brands fa-html5"></i>
+                <i class="p-i fa-brands fa-css3-alt"></i>
+                <i class="p-i fa-brands fa-react"></i>
+                <i class="p-i fa-brands fa-square-js"></i>
+                </div>
+                <div>
+                <button class="p-btn"><a href="">See Website</a></button>
+                <button class="p-btn"><a href="">View source code</a></button>
               </div>
               </div>
             </div>
@@ -142,6 +144,64 @@
             <div class="project"></div>
           </div>
         </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+          <div class="tb-intro">
+            <h2 class="tb-heading">Contact Me</h2>
+          </div>
+          <div class="contact-content">
+            <div class="left-contact">
+                <h4>Get In Touch.</h4>
+                <p>
+                   Need a web developer or just someone to discuss the history of liquid soap(or something equally random) with? Let's chat over bubble tea! 
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <p>Email:</p>
+                        </div>
+                        <p>adedijikhairan@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <p>LinkedIn:</p>
+                        </div>
+                        <a href="https://www.linkedin.com/in/khairan-adediji-131613191/"><p>Khairan Adediji</p></a>
+                    </div>
+                    <div class="contact-icons">
+                        <div class="contact-icon">
+                        <a href="https://www.linkedin.com/in/khairan-adediji-131613191/" target="_blank"><i class="icon fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/KhairanADiji" target="_blank"><i class="icon fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/khairandiji" target="_blank"><i class="icon fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-contact">
+                <form action="https://formspree.io/f/myyqylnb" method="POST" enctype="text/plain" class="contact-form">
+                    <div class="input-control i-c-2">
+                        <input type="text" name="Name" required placeholder="Your Name">
+                        <input type="text" name="Email" required placeholder="Your Email">
+                    </div>
+                    <div class="input-control">
+                        <input type="text" name="Subject" required placeholder="Enter Subject">
+                    </div>
+                    <div class="input-control">
+                        <textarea cols="15" rows="10" name="Message" required placeholder="Message Here"></textarea>
+                    </div>
+
+                    <button type="submit" value="submit" class="btn-con">
+                        <span class="btn-text"><h2>Send</h2></span>
+                        <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                    </button>
+                </form>    
+            </div>
+        </div>
+    </div>
+        </section>
+
     </main>
 </body>
 </html>

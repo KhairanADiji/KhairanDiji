@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,300;0,400;0,500;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lustria&family=Ysabeau+Infant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ysabeau Infant', sans-serif;
+}
+
+p{
+    font-family: 'Lustria', serif;
 }
 
 body{
@@ -131,7 +135,7 @@ body{
 .intro-p {
     margin-top: 20px;
     color: #2d334a;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -157,8 +161,8 @@ body{
     overflow: hidden;
 }
 
-.btn-text h2{
-    padding: 0 2rem;
+.btn-text{
+    padding: 3px 20px 10px 25px;
     color: #272343;
 }
 
@@ -180,7 +184,7 @@ body{
     transform: translateX(100%);
     transition: all .4s ease-in-out;
     z-index: -1;
-  }
+}
   
   .main-btn:hover:before {
     width: 100%;
@@ -253,12 +257,12 @@ body{
 
 .project{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 50px;
     margin: 50px 0;
-    /* background-color: #91dae2; */
-    border-radius: 30px;
+    background-color: #E8F0FE;
+    border-radius: 10px;
 }
 
 .project-img{
@@ -280,7 +284,144 @@ body{
 }
 
 .project-desc p{
+    color: #fffffe;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px 0 10px;
+}
+
+.p-i{
+    color: #fffffe;
+    font-size: 2rem;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.p-btn{
+    height: 40px;
+    background-color: #FFA434;
+    border: none;
+}
+
+.p-btn a{
+    text-decoration: none;
+}
+
+/* CONTACT */
+#contact{
+   background-color: #89C5CC;
+   padding: 50px 100px 70px;
+}
+
+.contact-content{
+    display: flex;
+    padding-top: 3rem;
+}
+  
+.left-contact{
+    flex: 2;
+}
+
+.left-contact h4{
+  color: #272343;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.left-contact p{
+  color: #323954;
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+.contact-item{
+  color: #323954;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-item p{
+  margin: .3rem 0 !important;
+  padding: 0 !important;
+}
+
+.contact-item a{
+    text-decoration: none;
+    /* color: #323954; */
+}
+
+.contact-icon{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.contact-icon a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fffffe;
+  background-color: var(--color-grey5);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 .4rem;
+  transition: all .4s ease-in-out;
+}
+
+.contact-icon a:hover{
+  background-color: #fffffe;
+}
+
+.contact-icon a:hover i{
+  color: #272343;
+}
+
+.contact-icon a i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.right-contact{
+    flex: 3;
+    margin-left: 3rem;
+}
+
+.input-control{
+  margin: 1.5rem 0;
+}
+
+.input-control input, .input-control textarea{
     color: #272343;
-    font-size: 1rem;
-    font-weight: 700;
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: #fffffe;
+  width: 100%;
+  resize: none;
+}
+
+.right-contact .i-c-2{
+  display: flex;
+}
+  
+.i-c-2 :last-child{
+    margin-left: 1.5rem;
+  }
+
+button.btn-con{
+    border: none;
+    border-radius: 30px;
+}
+
+.btn-text h2{
+    padding-top: 5px;
 }
