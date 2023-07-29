@@ -62,6 +62,7 @@ body{
 .nav-block{
     display: inline;
     background-color:#FFA434;
+    color: #fffffe;
     padding: 10px;
     border-radius: 10px;
 }
@@ -244,7 +245,8 @@ body{
 
 /* Projects */
 #portfolio{
-    padding: 40px 100px;
+    padding: 40px 150px 40px 200px;
+    background-color: F9F9F9;
 }
 
 .port-projects{
@@ -258,8 +260,8 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px;
-    margin: 30px 0;
+    padding: 20px 50px;
+    margin: 50px 0;
     border-radius: 10px;
 }
 
@@ -268,8 +270,8 @@ body{
 }
 
 .p-img{
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
 }
 
 .project-desc{
