@@ -458,6 +458,22 @@ button.btn-con{
     .wrapper{
         font-size: 1.4rem;
     }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-contact{
+        margin: 1rem;
+    }
 }
 
 @media screen and (max-width: 920px) {
